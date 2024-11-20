@@ -1,0 +1,211 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	font-family:Arial,sans-serif;
+	line-height:1.6;
+}
+header{
+	background-color:white;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.5);
+	display:flex;
+	justify-content:space-between;
+	position:sticky;
+	top:0;
+	z-index:100;
+
+}
+header img{
+
+}
+nav ul{
+	display:flex;
+	gap:1.3em;
+justify-content:center;
+margin:30px;
+list-style:none;	
+}
+nav ul li a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}.logo{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight:bold;
+}
+.active{
+	color:#4CAF50;
+}
+.hero{
+	min-height:70vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./images/3.jpg");
+	background-position:center;
+	background-size:cover;
+	overflow:hidden;
+}
+.hero-content {
+color:white;
+	text-align:center;
+	align-items:center;
+	
+
+}
+
+.hero-content h1{	
+
+			font-size:3em;
+
+}
+.hero-content p{
+			font-size:2em;
+
+}
+.cta-buttons{
+			font-size:1.2em;
+			margin:20px;
+}
+.cta-buttons .learn{
+	background:none;
+	color:#4CAF50;
+	border:1px solid #4CAF50;
+	text-decoration:none;
+	padding:8px;
+}
+.olympic-rings{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+	border:5px solid;
+}
+.ring1{
+	border-color:blue;
+}
+.ring2{
+	border-color:green;
+}.ring3{
+	border-color:red;
+}
+.ring4{
+		border-color:yellow;
+}
+.ring5{
+	border-color:black;
+
+}
+.olympic-symbol{
+	display:flex;
+	justify-content:center;
+	gap:15px;
+}
+.cta-buttons .contact{
+	background:#4CAF50;
+	color:white;
+	border:2px solid #4CAF50;
+	text-decoration:none;
+	padding:8px;
+}
+.highlights{
+	text-align:center;
+	margin:20px;
+}
+.highlights-grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));;
+}
+.highlights h2{
+	font-size:2em;
+		color:#4CAF50;
+
+}
+.highlights p{
+	margin:10px;
+}
+.highlights-grid .item h3{
+}
+.item{
+	 background: #D4F8E8;
+	 margin:20px;
+	 height:150px;
+	 border-radius:20px;
+		  
+
+}
+.item h3{
+		margin-top:20px;
+
+}
+
+.sponsor h2{
+	font-size:1em;
+	color:#4CAF50;
+	text-align:center;
+}
+.sponsor-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.line {
+    width: 500px; /* Width of the line */
+    border-bottom: 1px solid black; /* The line itself */
+    margin: 20px 0; /* Spacing around the line */
+}
+
+.about-container{
+min-height:50vh;
+}
+.about-content h2{
+color:#4CAF50;
+}
+.olympics{
+	height:60px;
+	width:60px;
+	border-radius:50%;
+	border:2px solid;
+}
+.gallery-container h1{
+	font-size:1.5em;
+	color:#4CAF50;text-align:center;
+}
+.gallery{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+}
+footer{
+	background:black;
+	text-align:center;
+	color:white;
+}
+
+@media(max-width: 767px) {
+	header{
+		flex-direction:column;
+		height:150px;
+	}
+	.logo p{
+		display:none;
+	}
+	body{
+		font-size:small;
+	}
+	.olympic-symbol{
+		flex-wrap:wrap;
+	}
+	.sponsor-content{
+		flex-direction:column;
+	}
+	.sponsor-content img {
+		height:40px;
+	}
+}
